@@ -2,15 +2,21 @@
 //  MatchMoonRocks.swift
 //  Alien Adventure
 //
-//  Created by Jarrod Parkes on 9/30/15.
-//  Copyright © 2015 Udacity. All rights reserved.
+//  Edited by Emanuele Bartolomucci on 2016/08/14.
 //
 
 extension Hero {
     
     func matchMoonRocks(inventory: [UDItem]) -> [UDItem] {
-        return [UDItem]()
+        
+        var moonRocks = [UDItem]()
+        
+        for item in inventory {
+            if item.name == "MoonRock" {
+                moonRocks.append(item)
+            }
+        }
+
+        return [UDItem](moonRocks)
     }
 }
-
-// If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 2"
