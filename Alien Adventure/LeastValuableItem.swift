@@ -2,15 +2,29 @@
 //  LeastValuableItem.swift
 //  Alien Adventure
 //
-//  Created by Jarrod Parkes on 9/30/15.
-//  Copyright © 2015 Udacity. All rights reserved.
+//  Edited by Emanuele Bartolomucci on 2016/08/14.
 //
 
 extension Hero {
     
     func leastValuableItem(inventory: [UDItem]) -> UDItem? {
-        return nil
+        
+        if (inventory.count != 0) {
+            
+            var leastValueItem: UDItem?
+            var lowestValue: Int = inventory[0].baseValue
+            
+            for item in inventory {
+                if lowestValue > item.baseValue {
+                    lowestValue = item.baseValue
+                    leastValueItem = item
+                }
+            }
+            return leastValueItem
+        }
+        
+        else {
+            return nil
+        }
     }
 }
-
-// If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 4"
