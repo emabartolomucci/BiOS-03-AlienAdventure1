@@ -2,7 +2,7 @@
 //  ShuffleStrings.swift
 //  Alien Adventure
 //
-//  Edited by Emanuele Bartolomucci on 2016/08/14.
+//  Edited by Emanuele Bartolomucci on 2016/08/15.
 //
 
 extension Hero {

@@ -2,8 +2,7 @@
 //  Settings.swift
 //  Alien Adventure
 //
-//  Created by Jarrod Parkes on 9/18/15.
-//  Copyright © 2015 Udacity. All rights reserved.
+//  Edited by Emanuele Bartolomucci on 2016/08/15.
 //
 
 import UIKit
@@ -20,7 +19,7 @@ struct Settings {
         static let FontColor = UIColor.whiteColor()
         static var Level = 0
         static var ShowBadges = false
-        static let RequestsToSkip = 4
+        static let RequestsToSkip = 0
     }
     
     // MARK: Dialogue (Set by UDDataLoader)
